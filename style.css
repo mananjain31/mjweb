@@ -1,0 +1,148 @@
+    /*BODY*/
+html, body {
+    margin: 5px;
+}
+body {
+    background-color: lawngreen;
+    color:  white;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*HEADER*/
+header {
+    background: tomato;
+    color: white;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    margin: 4px 0;
+    padding: 0;
+}
+
+header > ul > li {
+    box-sizing: border-box;
+    list-style-type: none;  
+    padding: 0 5px; 
+}
+
+.websiteName {
+    margin-right: auto;  
+    border-bottom: solid ;   
+}
+
+header h1, header h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.webpageName {
+    margin: 0 20px;
+}
+
+@media all and (max-width: 600px) {
+    header > ul > li {
+        flex: 1 1 100%;
+    }
+}
+/*NAV*/
+nav {
+    margin: 0;
+    background-color: tomato;
+    color: lawngreen;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: -1px; */
+}
+
+nav > ul {
+    margin-top: 0;;
+    margin-bottom: 0;;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav > ul > li {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 5px 16px;
+    text-align: center  ;
+}
+
+.search {
+    flex: 1;
+    color: inherit;
+}
+
+.search :focus {
+    color: white;
+}
+
+.searchInput {
+    width: 100%;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    border-bottom: solid;
+}
+
+::placeholder {
+    color: inherit;
+}
+
+@media all and (max-width: 600px) {
+    .navBar > li {
+        flex: 1 1 50%;
+        align-content: center;
+    }
+    .searchInput {
+        text-align: center;
+        flex: 1;
+    }
+}
+@media all and (max-width: 300px) {
+    .navBar > li {
+        flex: 1 1 100%;
+    }
+    .search {
+        order: 1;
+    }
+}
+ 
+    /*IMAGES*/
+.images {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.images > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.img {
+    flex: 1 1 150px;
+}
+
+.imgBig {
+    flex: 1 1 300px;
+}
